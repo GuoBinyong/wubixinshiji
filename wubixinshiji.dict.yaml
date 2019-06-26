@@ -1,24 +1,14 @@
-# Rime dictionary: wubixinshiji
-# encoding: utf-8
+# Rime字典: wubixinshiji
+# 编码: utf-8
 #
-# Changelog
-# Gong Chen <chen.sst@gmail.com>
-#     - Convert to Rime dictionary format.
-# Yu Yuwei <acevery@gmail.com>
-#     - Use original level 1 and 2 JianMa.
-# Yu Yuwei <acevery@gmail.com>
-#     - Update to Jidian 6, provided by Chen Xing
-# Yu Yuwei <acevery@gmail.com>
-#     - Add freqs from google.
-#     - Fix punctuation freqs
-# Chen Xing <cxcxcxcx@gmail.com>
-#     - Convert from JidianWubi table
+# 更新日志
+# 郭斌勇 <guobinyong@qq.com>
+#     - 优化词典
+#     - 从 <五笔字型大一统普及版+专业版新世纪整合词库> 转换并格式化成 Rime 格式的字典.
 #
-# Original table author
-# Wozy <wozy.in@gmail.com>
+# <五笔字型大一统普及版+专业版新世纪整合词库> 作者：王永民
 #
-# guobinyong <guobinyong@qq.com>
-#     - ti huan wei “xinshijiwubi” chi ku
+# 郭斌勇 <guobinyong@qq.com>
 
 ---
 name: wubixinshiji
