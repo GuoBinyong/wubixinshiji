@@ -6,14 +6,13 @@ schema:
   name: "新世纪五笔"
   version: "0.21"
   author:
-    - 發明人 王永民先生
-    - 方案修改人 郭斌勇
+    - 发明人 王永民先生
+    - 方案修改人 郭斌勇 <guobinyong@qq.com>
   description: |
     五笔字型新世纪版
-    碼表源自 ibus-table
-    敲 z 鍵進入拼音反查
+    敲 z 键进入拼音反查
   dependencies:
-    - luna_pinyin
+    - pinyin_simp
 
 switches:
   - name: ascii_mode
@@ -62,7 +61,7 @@ translator:
     - "^z.*$"
 
 reverse_lookup:
-  dictionary: luna_pinyin
+  dictionary: pinyin_simp
   prefix: "z"
   suffix: "'"
   tips: 〔拼音〕
