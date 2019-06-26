@@ -1,0 +1,44 @@
+# 此文件的默认名字为：.gitignore；是git的忽略文件的配置文件，描述了git需要忽略的文件
+
+#WebStorm生成的用来存放项目配置的目录
+.idea
+
+# VSCode在项目中创建的隐藏目录
+.vscode
+
+# 其它编辑器目录或文件
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+
+#Mac系统中用来存储文件夹的显示属性的文件
+.DS_Store
+
+# svn的仓库目录
+.svn
+
+
+# 前端项目
+# package-lock.json 是 npm 包锁定文件;如果希望所有协作开发人员的 npm 包的版本完全一致，则可以不忽略该文件
+package-lock.json
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/test/unit/coverage/
+/test/e2e/reports/
+selenium-debug.log
+
+
+# 本地环境文件
+.env.local
+.env.*.local
+
+
+# 应用安装包
+*.apk
+*.ipa
