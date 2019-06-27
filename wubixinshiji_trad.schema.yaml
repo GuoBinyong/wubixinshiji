@@ -7,7 +7,7 @@ schema:
   version: "0.7"
   author:
     - 发明人 王永民先生
-    - 方案修改人 郭斌勇 <guobinyong@qq.com>
+    - 方案制作人 郭斌勇 <guobinyong@qq.com>
   description: |
     新世纪五笔 简入繁出
     需要安装 opencc 简繁转换词典

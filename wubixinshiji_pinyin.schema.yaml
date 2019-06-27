@@ -7,7 +7,7 @@ schema:
   version: "0.9"
   author:
     - 发明人 王永民先生
-    - 方案修改人 郭斌勇 <guobinyong@qq.com>
+    - 方案制作人 郭斌勇 <guobinyong@qq.com>
   description: |
     五笔字型新世纪版＋汉语拼音混合輸入。
   dependencies:
