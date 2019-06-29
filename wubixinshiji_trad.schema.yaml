@@ -52,8 +52,8 @@ engine:
     - reverse_lookup_translator
     - table_translator
   filters:
+    - simplifier@zh_trad
     - simplifier@emoji_suggestion
-    - simplifier
     - uniquifier
 
 speller:
@@ -81,10 +81,6 @@ reverse_lookup:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
 
-simplifier:
-  opencc_config: s2t.json
-  option_name: zh_trad
-
 punctuator:
   import_preset: default
 
@@ -96,6 +92,9 @@ recognizer:
   patterns:
     reverse_lookup: "`[a-z]*'?$"
 
+zh_trad:
+  opencc_config: s2t.json
+  option_name: zh_trad
 
 emoji_suggestion:
   opencc_config: emoji.json
