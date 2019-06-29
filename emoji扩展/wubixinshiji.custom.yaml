@@ -1,5 +1,0 @@
-__patch:
-# Rx: emoji:customize:schema=wubixinshiji {
-  - patch/+:
-      __include: emoji_suggestion:/patch
-# }

@@ -3,6 +3,9 @@
   wubixinshiji.dict.yaml
 
 郭斌勇 <guobinyong@qq.com> : (LGPL)
-  wubixinshiji.schema.yaml
-  wubixinshiji_pinyin.schema.yaml
-  wubixinshiji_trad.schema.yaml
+  wubixinshiji.*.yaml
+  wubixinshiji_pinyin.*.yaml
+  wubixinshiji_trad.*.yaml
+
+雪齋 <leoyoontsaw@gmail.com> : (LGPL)
+  opencc/*.*

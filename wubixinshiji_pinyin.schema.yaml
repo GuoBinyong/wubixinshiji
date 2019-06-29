@@ -23,6 +23,9 @@ switches:
     states: [ 常用, 增廣 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
+  - name: emoji_suggestion
+    reset: 1
+    states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
 
 engine:
   processors:
@@ -44,6 +47,8 @@ engine:
     - punct_translator
     - reverse_lookup_translator
     - table_translator
+  filters:
+    - simplifier@emoji_suggestion
 
 speller:
   delimiter: " ;'"
@@ -84,3 +89,9 @@ recognizer:
   import_preset: default
   patterns:
     reverse_lookup: "`[a-z]*'?$"
+
+
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
