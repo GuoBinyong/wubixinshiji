@@ -18,7 +18,9 @@
 
 
 # 一 输入方案介绍
-这是一套[Rime输入法][]的新世纪五笔输入方案集，并且支持自动匹配 emoji 表情，该方案集里有以下Rime输入方案：
+这是一套[Rime输入法][]的[新世纪五笔输入方案集][仓库地址]，并且支持自动匹配 emoji 表情，该方案集里有以下Rime输入方案：
+
+[下载地址][仓库地址]为 : https://github.com/GuoBinyong/wubixinshiji
 
 ## 新世纪五笔
 **方案ID:** `wubixinshiji`  
