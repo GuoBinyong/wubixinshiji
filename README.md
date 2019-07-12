@@ -2,6 +2,9 @@
 [東風破]: https://github.com/rime/plum
 [仓库地址]: https://github.com/GuoBinyong/wubixinshiji
 [Rime输入法]: https://rime.im
+[百度云盘]: https://pan.baidu.com/s/1bUdEAz7W8hC_imi66WVnaQ
+
+
 
 
 目录
@@ -16,11 +19,14 @@
 内容
 ===================
 
+> 方案下载地址
+> - [GitHub仓库地址][仓库地址] : https://github.com/GuoBinyong/wubixinshiji
+> - [百度云盘][] : 链接：https://pan.baidu.com/s/1bUdEAz7W8hC_imi66WVnaQ 提取码：v234
+
 
 # 一 输入方案介绍
 这是一套[Rime输入法][]的[新世纪五笔输入方案集][仓库地址]，并且支持自动匹配 emoji 表情，该方案集里有以下Rime输入方案：
 
-[下载地址][仓库地址]为 : https://github.com/GuoBinyong/wubixinshiji
 
 ## 新世纪五笔
 **方案ID:** `wubixinshiji`  
