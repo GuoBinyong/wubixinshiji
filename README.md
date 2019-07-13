@@ -3,6 +3,7 @@
 [仓库地址]: https://github.com/GuoBinyong/wubixinshiji
 [Rime输入法]: https://rime.im
 [百度云盘]: https://pan.baidu.com/s/1bUdEAz7W8hC_imi66WVnaQ
+[Rime定制指南]: https://github.com/rime/home/wiki/CustomizationGuide
 
 
 
@@ -53,22 +54,58 @@
   - [袖珍简化字拼音][] ℞ **`pinyin-simp`**
 
 
-# 三 安装
+# 三 安装与配置
 
-## 方式1:[東風破][]
+## 1.安装
+### 方式1:[東風破][]
 安裝命令：`bash rime-install GuoBinyong/wubixinshiji pinyin-simp`
 
 
 
-## 方案2:手动安装
-将以下文件或目录拷贝到Rime输入法的用户配置目录中:  
+### 方案2:手动安装
+1. 安装新世纪五笔方案集
+   将以下文件或目录拷贝到Rime输入法的用户配置目录中:  
+   
+   - [x] `wubixinshiji.dict.yaml` : 必选；五笔码表文件
+   - [x] `opencc` : 必选；如果用户配置目录下已经有该目录，则把该目录的所有文件拷贝到用户配置目录下    `opencc` 目录中；
+   - [ ] `wubixinshiji.schema.yaml` : 可选； 新世纪五笔 输入方案
+   - [ ] `wubixinshiji_pinyin.schema.yaml` : 可选； 新世纪五笔·拼音 输入方案
+   - [ ] `wubixinshiji_trad.schema.yaml` : 可选； 新世纪五笔·简入繁出 输入方案
 
-- [x] `wubixinshiji.dict.yaml` : 必选；五笔码表文件
-- [x] `opencc` : 必选；如果用户配置目录下已经有该目录，则把该目录的所有文件拷贝到用户配置目录下 `opencc` 目录中；
-- [ ] `wubixinshiji.schema.yaml` : 可选； 新世纪五笔 输入方案
-- [ ] `wubixinshiji_pinyin.schema.yaml` : 可选； 新世纪五笔·拼音 输入方案
-- [ ] `wubixinshiji_trad.schema.yaml` : 可选； 新世纪五笔·简入繁出 输入方案
+2. 安装依赖方案 _袖珍简化字拼音_；（如果已经安装，请忽略此步）
+   由于拼音反查、五笔拼音混合输入功能依赖于 _袖珍简化字拼音_ ，所以，如果您还没有安装  _袖珍简化字拼音_，那你同样需要安装 _袖珍简化字拼音_ ， _袖珍简化字拼音_ 的下载地址如下：
+   - [GitHub仓库地址][袖珍简化字拼音]
+   - [百度云盘][] : 链接：https://pan.baidu.com/s/1bUdEAz7W8hC_imi66WVnaQ 提取码：v234
+   
+   将以下文件或目录拷贝到Rime输入法的用户配置目录中:  
+   - [x] `pinyin_simp.dict.yaml` : 必选；袖珍简化字拼音码表文件
+   - [x] `pinyin_simp.schema.yaml` : 必选； 袖珍简化字拼音 输入方案
 
+
+
+## 2.配置
+输入方案安装好后，还需要把需要用的输入方案加入方案选单，详细的配置方法，请参考[Rime定制指南][]，本文只简单教授其：
+
+在用户配置目录中
+- 如果没有 `default.custom.yaml` 文件，则把百度云盘中的 `default.custom.yaml` 直接拷贝到 用户配置目录中；
+
+- 如果有 `default.custom.yaml` 文件，则在该文件中的 `schema_list:` 下添加以下配置
+   ```
+       - schema: wubixinshiji    # 新世纪五笔
+       - schema: wubixinshiji_pinyin    # 新世纪五笔·拼音
+       - schema: wubixinshiji_trad    # 新世纪五笔·简入繁出
+   ```
+
+**注意事项：**
+- 添加时，每行前面的空格要和之前的保持一致；
+- 只添加你需要的方案，不需要的方案可以不用添加，或者在不需要的方案选单那行的行首添加个 `#`，如下：
+  ```
+  #    - schema: wubixinshiji_trad    # 新世纪五笔·简入繁出
+  ```
+
+
+## 3.部署
+点击 **部署** 按钮： Rime输入法的特点是，当你完成配置后，需要点击 **部署** 按钮，才能让输入法执行你的配置.
 
 
 
