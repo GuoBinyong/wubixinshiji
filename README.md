@@ -135,7 +135,7 @@
 - Windows：**小狼亳**
 - Linux：**中州韻**
 - Android：**同文**
-- IOS：**小鹤双拼五笔输入法**
+- IOS：**iRime输入法**
 
 
 
